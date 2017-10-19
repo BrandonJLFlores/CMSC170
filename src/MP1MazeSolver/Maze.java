@@ -93,11 +93,34 @@ public class Maze {
         return neighbours;
     }
 
+
+    //no E and F version
+//    @Override
+//    public String toString() {
+//        StringBuilder stringBuilder = new StringBuilder();
+//        for(int i = 0; i < rows; i++){
+//            for (int j = 0; j < cols; j++){
+//                stringBuilder.append(maze[i][j].getElement());
+//            }
+//            stringBuilder.append('\n');
+//        }
+//        return  stringBuilder.toString();
+//    }
+
+
+    //with E and F
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         for(int i = 0; i < rows; i++){
             for (int j = 0; j < cols; j++){
+                if(MazeRunner.getClosedList().contains(maze[i][j]) && maze[i][j].getElement() != '.'
+                        && maze[i][j].getElement() != 'P'){
+                    maze[i][j].setElement('E');
+                }
+                if(MazeRunner.getOpenList().contains(maze[i][j])){
+                    maze[i][j].setElement('F');
+                }
                 stringBuilder.append(maze[i][j].getElement());
             }
             stringBuilder.append('\n');

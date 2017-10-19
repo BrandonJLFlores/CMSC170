@@ -5,10 +5,10 @@ import java.util.Collections;
 
 public class MazeRunner {
     private Maze m;
-    //    private Square[][] maze;
+//    private Square[][] maze;
     private Square start, end;
-    private static OpenList openList;
-    private static ClosedList closedList;
+    private OpenList openList;
+    private ClosedList closedList;
 
     private MazeRunner(String name){
         m = new Maze(name);
@@ -61,24 +61,16 @@ public class MazeRunner {
 
 
     private int getHeuristic(int i, Square square) {
-        int dx = Math.abs(square.getX() - end.getX());
-        int dy = Math.abs(square.getY() - end.getY());
+        int dx = square.getX() - end.getX();
+        int dy = square.getY() - end.getY();
         if(i == 1){//manhattan
-            return dx + dy;
+            return Math.abs(dx) + Math.abs(dy);
         }
         return Math.max(dx,dy);//straight line
     }
 
-    public static ClosedList getClosedList() {
-        return closedList;
-    }
-
-    public static OpenList getOpenList() {
-        return openList;
-    }
-
     public static void main(String[] args) {
-        final String FILENAME = "openMaze.txt";//
+        final String FILENAME = "bigMaze.txt";//
         MazeRunner mazeRunner = new MazeRunner(FILENAME);
         mazeRunner.solve();
         mazeRunner.print();
