@@ -5,14 +5,14 @@ import java.util.Collections;
 
 public class MazeRunner {
     private Maze m;
-    private Square[][] maze;
+//    private Square[][] maze;
     private Square start, end;
     private OpenList openList;
     private ClosedList closedList;
 
     private MazeRunner(String name){
         m = new Maze(name);
-        maze = m.getMaze();
+        //maze = m.getMaze();
         start = m.getStartNode();
         end = m.getEndNode();
         openList = new OpenList();
