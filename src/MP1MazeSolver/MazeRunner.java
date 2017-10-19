@@ -33,7 +33,7 @@ public class MazeRunner {
             for(Square square : neighbours){
                 if(!openList.contains(currentLocation) && !closedList.contains(square) && square != null && square.getElement() != '%'){
                     square.setParent(currentLocation);
-                    square.setH(getHeuristic(1,square)); //1 if manhattan, else straight line
+                    square.setH(getHeuristic(2,square)); //1 if manhattan, else straight line
                     square.setG(currentLocation.getG() + 1);
                     square.setFn(square.getG() + square.getH());
                     openList.add(square);
@@ -56,7 +56,7 @@ public class MazeRunner {
     private void print(){
         System.out.println(m.toString());
 
-        System.out.println(openList.getFrontier());
+        System.out.println("frontier lmao: " + openList.getFrontier());
     }
 
 
@@ -70,7 +70,7 @@ public class MazeRunner {
     }
 
     public static void main(String[] args) {
-        final String FILENAME = "openMaze.txt";//
+        final String FILENAME = "bigMaze.txt";//
         MazeRunner mazeRunner = new MazeRunner(FILENAME);
         mazeRunner.solve();
         mazeRunner.print();

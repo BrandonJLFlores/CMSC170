@@ -14,6 +14,7 @@ public class OpenList {
 
     void add(Square sq){
         oList.add(sq);
+        frontier += 1;
     }
 
 //    boolean checkoList(int x, int y){
@@ -49,7 +50,6 @@ public class OpenList {
     }
 
     Square remove(){
-        frontier += 1;
         return oList.remove(0);
     }
 
