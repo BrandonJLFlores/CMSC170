@@ -31,12 +31,41 @@ public class MazeRunner {
             closedList.add(currentLocation);
             neighbours = m.surrounding(currentLocation);
             for(Square square : neighbours){
-                if(!openList.contains(currentLocation) && !closedList.contains(square) && square != null && square.getElement() != '%'){
-                    square.setParent(currentLocation);
-                    square.setH(getHeuristic(2,square)); //1 if manhattan, else straight line
-                    square.setG(currentLocation.getG() + 1);
-                    square.setFn(square.getG() + square.getH());
-                    openList.add(square);
+                if(!closedList.contains(square) && square != null && square.getElement() != '%'){
+                //orig soln nako ni
+//                    square.setParent(currentLocation);
+//                    square.setH(getHeuristic(2,square)); //1 if manhattan, else straight line
+//                    square.setG(currentLocation.getG() + 1);
+//                    square.setFn(square.getG() + square.getH());
+//                    openList.add(square);
+
+                    //simplified soln nila ni
+                    if(!openList.contains(square) || square.getG() > currentLocation.getG() + 1){
+                        square.setParent(currentLocation);
+                        square.setH(getHeuristic(2,square)); //1 if manhattan, else straight line
+                        square.setG(currentLocation.getG() + 1);
+                        square.setFn(square.getG() + square.getH());
+                    }
+                    if(!openList.contains(square)) {
+                        openList.add(square);
+                    }
+
+                    //ila soln ni below
+//                    if(!openList.contains(square)){
+//                        square.setParent(currentLocation);
+//                        square.setH(getHeuristic(1,square)); //1 if manhattan, else straight line
+//                        square.setG(currentLocation.getG() + 1);
+//                        square.setFn(square.getG() + square.getH());
+//                        openList.add(square);
+//                    }
+//                    else{
+//                        if(square.getG() > currentLocation.getG() + 1){
+//                            square.setParent(currentLocation);
+//                            square.setH(getHeuristic(1,square));
+//                            square.setG(currentLocation.getG() + 1);
+//                            square.setFn(square.getG() + square.getH());
+//                        }
+//                    }
                 }
             }
         }

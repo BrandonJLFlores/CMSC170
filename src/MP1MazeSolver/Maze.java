@@ -85,10 +85,15 @@ public class Maze {
     public ArrayList<Square> surrounding(Square square) {
         int x = square.getX(), y = square.getY();
         ArrayList<Square> neighbours = new ArrayList<>();
-        neighbours.add(maze[x][y-1]);
-        neighbours.add(maze[x-1][y]);
-        neighbours.add(maze[x][y+1]);
-        neighbours.add(maze[x+1][y]);
+//        neighbours.add(maze[x][y-1]); //left
+//        neighbours.add(maze[x-1][y]); //up
+//        neighbours.add(maze[x][y+1]); //right
+//        neighbours.add(maze[x+1][y]); //down
+
+        neighbours.add(maze[x-1][y]); //up
+        neighbours.add(maze[x+1][y]); //down
+        neighbours.add(maze[x][y-1]); //left
+        neighbours.add(maze[x][y+1]); //right
 
         return neighbours;
     }
