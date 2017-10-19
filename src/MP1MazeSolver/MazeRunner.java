@@ -33,7 +33,7 @@ public class MazeRunner {
             for(Square square : neighbours){
                 if(!openList.contains(currentLocation) && !closedList.contains(square) && square != null && square.getElement() != '%'){
                     square.setParent(currentLocation);
-                    square.setH(getHeuristic(1,square));
+                    square.setH(getHeuristic(1,square)); //1 if manhattan, else straight line
                     square.setG(currentLocation.getG() + 1);
                     square.setFn(square.getG() + square.getH());
                     openList.add(square);
@@ -55,6 +55,8 @@ public class MazeRunner {
 
     private void print(){
         System.out.println(m.toString());
+
+        System.out.println(openList.getFrontier());
     }
 
 
