@@ -60,12 +60,13 @@ public class MazeRunner {
 
     private void markPath(Square square){
         while(square.hasParent()){
-            if(square.getElement() != 'P' || square.getElement() != 'G'){
-                square.setElement('.');
-            }
+            square.setElement('.');
             pathcost++;
             square = square.getParent();
         }
+        pathcost += 1; //since ang first gi check sa loop dili ang end node kundi ang tapad sa end node
+                        // note, mu exit ang solve() if ma add na ang end node sa openlist :)
+                        // add +1 para sa cost sa goal
     }
 
     private void print(){
