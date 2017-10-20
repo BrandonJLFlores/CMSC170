@@ -12,6 +12,7 @@ public class Maze {
     private int rows;
     private int cols;
     private Square startNode, endNode;
+    private int pathCost;
 
     Maze(String file){
         loadFile(file);
@@ -19,6 +20,7 @@ public class Maze {
         cols = mazeLine.get(0).length();
         maze = new Square[rows][cols];
         addToMaze();
+        pathCost = 0;
     }
 
     private void addToMaze() {
@@ -34,7 +36,10 @@ public class Maze {
             char c = s.charAt(j);
             Square sq = new Square(c, i,j);
             if(c == 'P') startNode = sq;
-            if(c == '.') endNode = sq;
+            if(c == '.'){
+                sq.setElement('G');
+                endNode = sq;
+            }
             maze[i][j] = sq;
         }
     }
@@ -98,38 +103,42 @@ public class Maze {
         return neighbours;
     }
 
+    public int getPathCost() {
+        return pathCost;
+    }
 
     //no E and F version
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        for(int i = 0; i < rows; i++){
+            for (int j = 0; j < cols; j++){
+                stringBuilder.append(maze[i][j].getElement());
+                pathCost++;
+            }
+            stringBuilder.append('\n');
+        }
+        return  stringBuilder.toString();
+    }
+
+
+    //with E and F
 //    @Override
 //    public String toString() {
 //        StringBuilder stringBuilder = new StringBuilder();
 //        for(int i = 0; i < rows; i++){
 //            for (int j = 0; j < cols; j++){
+//                if(MazeRunner.getClosedList().contains(maze[i][j]) && maze[i][j].getElement() != '.'
+//                        && maze[i][j].getElement() != 'P'){
+//                    maze[i][j].setElement('E');
+//                }
+//                if(MazeRunner.getOpenList().contains(maze[i][j])){
+//                    maze[i][j].setElement('F');
+//                }
 //                stringBuilder.append(maze[i][j].getElement());
 //            }
 //            stringBuilder.append('\n');
 //        }
 //        return  stringBuilder.toString();
 //    }
-
-
-    //with E and F
-    @Override
-    public String toString() {
-        StringBuilder stringBuilder = new StringBuilder();
-        for(int i = 0; i < rows; i++){
-            for (int j = 0; j < cols; j++){
-                if(MazeRunner.getClosedList().contains(maze[i][j]) && maze[i][j].getElement() != '.'
-                        && maze[i][j].getElement() != 'P'){
-                    maze[i][j].setElement('E');
-                }
-                if(MazeRunner.getOpenList().contains(maze[i][j])){
-                    maze[i][j].setElement('F');
-                }
-                stringBuilder.append(maze[i][j].getElement());
-            }
-            stringBuilder.append('\n');
-        }
-        return  stringBuilder.toString();
-    }
 }

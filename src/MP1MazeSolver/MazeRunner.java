@@ -5,20 +5,19 @@ import java.util.Collections;
 
 public class MazeRunner {
     private Maze m;
-    //    private Square[][] maze;
     private Square start, end;
     private static OpenList openList;
     private static ClosedList closedList;
 
+
     private MazeRunner(String name){
         m = new Maze(name);
-        //maze = m.getMaze();
         start = m.getStartNode();
         end = m.getEndNode();
         openList = new OpenList();
         closedList = new ClosedList();
-        System.out.println(start.getX()+ " start " + start.getY());
-        System.out.println(end.getX()+ " end " + end.getY());
+//        System.out.println(start.getX()+ " start " + start.getY());
+//        System.out.println(end.getX()+ " end " + end.getY());
     }
 
     private void solve(){
@@ -39,10 +38,10 @@ public class MazeRunner {
 //                    square.setFn(square.getG() + square.getH());
 //                    openList.add(square);
 
-                    //simplified soln nila ni
+                    //simplified soln
                     if(!openList.contains(square) || square.getG() > currentLocation.getG() + 1){
                         square.setParent(currentLocation);
-                        square.setH(getHeuristic(2,square)); //1 if manhattan, else straight line
+                        square.setH(getHeuristic(1,square)); //1 if manhattan, else straight line
                         square.setG(currentLocation.getG() + 1);
                         square.setFn(square.getG() + square.getH());
                     }
@@ -50,22 +49,6 @@ public class MazeRunner {
                         openList.add(square);
                     }
 
-                    //ila soln ni below
-//                    if(!openList.contains(square)){
-//                        square.setParent(currentLocation);
-//                        square.setH(getHeuristic(1,square)); //1 if manhattan, else straight line
-//                        square.setG(currentLocation.getG() + 1);
-//                        square.setFn(square.getG() + square.getH());
-//                        openList.add(square);
-//                    }
-//                    else{
-//                        if(square.getG() > currentLocation.getG() + 1){
-//                            square.setParent(currentLocation);
-//                            square.setH(getHeuristic(1,square));
-//                            square.setG(currentLocation.getG() + 1);
-//                            square.setFn(square.getG() + square.getH());
-//                        }
-//                    }
                 }
             }
         }
@@ -86,6 +69,7 @@ public class MazeRunner {
         System.out.println(m.toString());
 
         System.out.println("frontier lmao: " + openList.getFrontier());
+        System.out.println("path: " + m.getPathCost());
     }
 
 
@@ -107,7 +91,7 @@ public class MazeRunner {
     }
 
     public static void main(String[] args) {
-        final String FILENAME = "openMaze.txt";//
+        final String FILENAME = "Mazes/smallMaze.lay.txt";//
         MazeRunner mazeRunner = new MazeRunner(FILENAME);
         mazeRunner.solve();
         mazeRunner.print();

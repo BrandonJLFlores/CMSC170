@@ -17,30 +17,6 @@ public class OpenList {
         frontier += 1;
     }
 
-//    boolean checkoList(int x, int y){
-//        for(Square sq : oList){
-//            if(sq.getX() == x && sq.getY() == y) return true;
-//        }
-//        return false;
-//    }
-
-
-//    public Square findSmallestfn() {
-//        int min = oList.get(0).getFn();
-//        int minIndex = 0;
-//        int ctr = 0;
-//        for(Square sq : oList){
-//            if(sq.getFn() < min){
-//                minIndex = ctr;
-//                min = sq.getFn();
-//            }
-//            ctr++;
-//        }
-//        Square sq = oList.get(minIndex);
-//        oList.remove(minIndex);
-//        return sq;
-//    }
-
     int getSize(){
         return oList.size();
     }
