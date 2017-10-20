@@ -8,9 +8,11 @@ public class MazeRunner {
     private Square start, end;
     private static OpenList openList;
     private static ClosedList closedList;
+    private static int pathcost;
 
 
     private MazeRunner(String name){
+        pathcost = 0;
         m = new Maze(name);
         start = m.getStartNode();
         end = m.getEndNode();
@@ -58,16 +60,18 @@ public class MazeRunner {
 
     private void markPath(Square square){
         while(square.hasParent()){
-            if(square.getElement() != 'P'){
+            if(square.getElement() != 'P' || square.getElement() != 'G'){
                 square.setElement('.');
             }
+            pathcost++;
             square = square.getParent();
         }
     }
 
     private void print(){
         System.out.print(m.toString());
-        System.out.println("Path Cost: " + m.getPathCost());
+        //System.out.println("Path Cost: " + m.getPathCost());
+        System.out.println("Path Cost: " + pathcost);
         System.out.println("Number of Nodes Expanded: " + closedList.getcList().size());
         System.out.println("Maximum Size of Frontier: " + openList.getFrontier());
     }

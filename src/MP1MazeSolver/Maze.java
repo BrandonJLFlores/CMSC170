@@ -135,7 +135,7 @@ public class Maze {
                         && maze[i][j].getElement() != 'P'){
                     maze[i][j].setElement('E');
                 }
-                if(MazeRunner.getOpenList().contains(maze[i][j])){
+                if(MazeRunner.getOpenList().contains(maze[i][j]) && maze[i][j].getElement() != 'G'){
                     maze[i][j].setElement('F');
                 }
                 stringBuilder.append(maze[i][j].getElement());
