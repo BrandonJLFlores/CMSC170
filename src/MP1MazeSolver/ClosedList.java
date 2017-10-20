@@ -17,4 +17,8 @@ public class ClosedList {
     boolean contains(Square square){
         return cList.contains(square);
     }
+
+    public ArrayList<Square> getcList() {
+        return cList;
+    }
 }
