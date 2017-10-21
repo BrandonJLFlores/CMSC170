@@ -114,7 +114,14 @@ class Maze {
         for(int i = 0; i < rows; i++){
             for (int j = 0; j < cols; j++){
                 stringBuilder.append(maze[i][j].getElement());
-                stringBuilder.append(" ");
+                if (maze[i][j].getElement().matches("-?\\d+(\\.\\d+)?")){
+                    if (Integer.valueOf(maze[i][j].getElement()) < 10){
+                        stringBuilder.append(" ");
+                    }
+                }
+                else {
+                    stringBuilder.append(" ");
+                }
             }
             stringBuilder.append('\n');
         }

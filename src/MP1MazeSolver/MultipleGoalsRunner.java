@@ -11,7 +11,7 @@ public class MultipleGoalsRunner {
     private ArrayList<Goal> path;
 
     public static void main(String[] args) {
-        final String FILENAME = "exc maze/tiny_search.txt";//
+        final String FILENAME = "exc maze/small_search.txt";//
         MultipleGoalsRunner mazeRunner = new MultipleGoalsRunner(FILENAME);
         mazeRunner.solve();
 
@@ -84,8 +84,8 @@ public class MultipleGoalsRunner {
     private void setMazePrint(){
         for(Goal goal: path){
             Integer index = path.indexOf(goal)+1;
-            goal.setElement(String.valueOf(index.toString().charAt(0)));
-            m.setEndNode(String.valueOf(index.toString().charAt(0)),goal);
+            goal.setElement(index.toString());
+            m.setEndNode(index.toString(),goal);
         }
         m.setNode("P",start);
         System.out.println(m.toString());
