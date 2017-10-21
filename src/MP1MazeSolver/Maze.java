@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Maze {
+class Maze {
     private ArrayList<String> mazeLine = new ArrayList<>();
     private Square[][] maze;
     private int rows;
@@ -22,6 +22,7 @@ public class Maze {
         addToMaze();
         pathCost = 0;
     }
+
 
     private void addToMaze() {
         int i = 0;
@@ -75,6 +76,10 @@ public class Maze {
         }
     }
 
+    public void incPathCost(){
+        pathCost++;
+    }
+
     public Square[][] getMaze() {
         return maze;
     }
@@ -90,11 +95,6 @@ public class Maze {
     public ArrayList<Square> surrounding(Square square) {
         int x = square.getX(), y = square.getY();
         ArrayList<Square> neighbours = new ArrayList<>();
-//        neighbours.add(maze[x][y-1]); //left
-//        neighbours.add(maze[x-1][y]); //up
-//        neighbours.add(maze[x][y+1]); //right
-//        neighbours.add(maze[x+1][y]); //down
-
         neighbours.add(maze[x-1][y]); //up
         neighbours.add(maze[x+1][y]); //down
         neighbours.add(maze[x][y-1]); //left
@@ -108,40 +108,69 @@ public class Maze {
     }
 
     //no E and F version
-  /*  @Override
-    public String toString() {
-        StringBuilder stringBuilder = new StringBuilder();
-        for(int i = 0; i < rows; i++){
-            for (int j = 0; j < cols; j++){
-                stringBuilder.append(maze[i][j].getElement());
-                if(maze[i][j].getElement() == '.' || maze[i][j].getElement() == 'G'){
-                    ++pathCost;
-                }
-
-            }
-            stringBuilder.append('\n');
-        }
-        return  stringBuilder.toString();
-    }
-*/
-
-    //with E and F
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         for(int i = 0; i < rows; i++){
             for (int j = 0; j < cols; j++){
-                if(MazeRunner.getClosedList().contains(maze[i][j]) && maze[i][j].getElement() != '.'
-                        && maze[i][j].getElement() != 'P'){
-                    maze[i][j].setElement('E');
-                }
-                if(MazeRunner.getOpenList().contains(maze[i][j]) && maze[i][j].getElement() != 'G'){
-                    maze[i][j].setElement('F');
-                }
                 stringBuilder.append(maze[i][j].getElement());
             }
             stringBuilder.append('\n');
         }
         return  stringBuilder.toString();
+    }
+
+    //Multiple Goals Functions
+
+    public ArrayList<Goal> getEndGoals() { //stores end goals
+        int i = 0;
+        ArrayList<Goal> end = new ArrayList<Goal>();
+        for(String s : mazeLine){
+            for(int j = 0; j < s.length(); j++){
+                char c = s.charAt(j);
+                Goal sq = new Goal(c, i,j);
+                if(c == '.'){
+                    end.add(sq);
+                }
+            }
+            i++;
+        }
+        return end;
+    }
+
+    public void eraseGoals(ArrayList<Goal> goalsArr){
+        for(Goal goal: goalsArr){
+            eraseGoals(goal);
+        }
+    }
+    public void eraseGoals(Goal goal){
+        maze[goal.getX()][goal.getY()].setElement(new String(" ").charAt(0));
+    }
+
+    public void setEndNode(char c, Square goal){
+        Square sq = new Square(c,goal.getX(),goal.getY());
+        maze[goal.getX()][goal.getY()] = sq;
+        endNode = sq;
+    }
+
+    public void setNode(char c, Square goal){
+        Square sq = new Square(c,goal.getX(),goal.getY());
+        maze[goal.getX()][goal.getY()] = sq;
+    }
+
+    public void setEndNode(Square goal){
+        setEndNode('G',goal);
+    }
+
+    public void setStart(Square start){
+        Square sq = new Square(' ',startNode.getX(),startNode.getY());
+        maze[startNode.getX()][startNode.getY()] = sq;
+
+        sq = new Square('P',start.getX(),start.getY());
+        maze[start.getX()][start.getY()] = sq;
+        startNode= sq;
+    }
+    void resetPathCost(){
+        pathCost = 0;
     }
 }

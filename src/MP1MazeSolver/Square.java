@@ -18,15 +18,6 @@ public class Square implements Comparable<Square>{
         parent = null;
     }
 
-//    Square(int x, int y, int g, int h, int fn, Square par){
-//        this.x = x;
-//        this.y = y;
-//        this.g = g;
-//        this.h = h;
-//        this.fn = fn;
-//        parent = par;
-//    }
-
     public int getX() {
         return x;
     }
@@ -91,5 +82,4 @@ public class Square implements Comparable<Square>{
     public int compareTo(Square o) {
         return Integer.compare(fn, o.fn);
     }
-
 }
