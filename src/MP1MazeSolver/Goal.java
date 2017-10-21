@@ -6,7 +6,7 @@ public class Goal extends Square {
     private int pathCost;
     private int heuristic;
 
-    public Goal(char c, int x, int y) {
+    public Goal(String c, int x, int y) {
         super(c, x, y);
         pathCost = 0;
         heuristic = 0;

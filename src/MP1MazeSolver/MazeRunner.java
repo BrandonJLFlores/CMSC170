@@ -56,7 +56,7 @@ public class MazeRunner {
             closedList.add(currentLocation);
             neighbours = m.surrounding(currentLocation);
             for(Square square : neighbours){
-                if(!closedList.contains(square) && square != null && square.getElement() != '%'){
+                if(!closedList.contains(square) && square != null && !square.getElement().equals("%")){
                     if(!openList.contains(square) || square.getG() > currentLocation.getG() + 1){
                         square.setParent(currentLocation);
                         square.setH(getHeuristic(1,square)); //1 if manhattan, else straight line
@@ -77,9 +77,9 @@ public class MazeRunner {
 
     private void markPath(Square square){
         while(square.hasParent()){
-            if(square.getElement() != 'P'){
+            if(!square.getElement().equals("P")){
                 m.incPathCost();
-                square.setElement('.');
+                square.setElement(".");
             }
             path.add(square);
             square = square.getParent();
@@ -134,9 +134,9 @@ public class MazeRunner {
     }
     void reset(){//erase traversed path for printing
         for(Square square: path){
-            square.setElement(' ');
+            square.setElement(" ");
         }
-        end.setElement(' ');
+        end.setElement(" ");
         m.resetPathCost();
     }
 }

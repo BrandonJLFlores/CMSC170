@@ -34,11 +34,11 @@ class Maze {
 
     private void setRow(String s, int i) { //row nang j
         for(int j = 0; j < s.length(); j++){
-            char c = s.charAt(j);
+            String c = String.valueOf(s.charAt(j));
             Square sq = new Square(c, i,j);
-            if(c == 'P') startNode = sq;
-            if(c == '.'){
-                sq.setElement('G');
+            if(c.equals("P")) startNode = sq;
+            if(c.equals(".")){
+                sq.setElement("G");
                 endNode = sq;
             }
             maze[i][j] = sq;
@@ -114,6 +114,7 @@ class Maze {
         for(int i = 0; i < rows; i++){
             for (int j = 0; j < cols; j++){
                 stringBuilder.append(maze[i][j].getElement());
+                stringBuilder.append(" ");
             }
             stringBuilder.append('\n');
         }
@@ -127,9 +128,9 @@ class Maze {
         ArrayList<Goal> end = new ArrayList<Goal>();
         for(String s : mazeLine){
             for(int j = 0; j < s.length(); j++){
-                char c = s.charAt(j);
+                String c = String.valueOf(s.charAt(j));
                 Goal sq = new Goal(c, i,j);
-                if(c == '.'){
+                if(c.equals(".")){
                     end.add(sq);
                 }
             }
@@ -144,29 +145,29 @@ class Maze {
         }
     }
     public void eraseGoals(Goal goal){
-        maze[goal.getX()][goal.getY()].setElement(new String(" ").charAt(0));
+        maze[goal.getX()][goal.getY()].setElement(String.valueOf(new String("  ").charAt(0)));
     }
 
-    public void setEndNode(char c, Square goal){
+    public void setEndNode(String c, Square goal){
         Square sq = new Square(c,goal.getX(),goal.getY());
         maze[goal.getX()][goal.getY()] = sq;
         endNode = sq;
     }
 
-    public void setNode(char c, Square goal){
+    public void setNode(String c, Square goal){
         Square sq = new Square(c,goal.getX(),goal.getY());
         maze[goal.getX()][goal.getY()] = sq;
     }
 
     public void setEndNode(Square goal){
-        setEndNode('G',goal);
+        setEndNode("G",goal);
     }
 
     public void setStart(Square start){
-        Square sq = new Square(' ',startNode.getX(),startNode.getY());
+        Square sq = new Square(" ",startNode.getX(),startNode.getY());
         maze[startNode.getX()][startNode.getY()] = sq;
 
-        sq = new Square('P',start.getX(),start.getY());
+        sq = new Square("P",start.getX(),start.getY());
         maze[start.getX()][start.getY()] = sq;
         startNode= sq;
     }

@@ -84,10 +84,10 @@ public class MultipleGoalsRunner {
     private void setMazePrint(){
         for(Goal goal: path){
             Integer index = path.indexOf(goal)+1;
-            goal.setElement(index.toString().charAt(0));
-            m.setEndNode(index.toString().charAt(0),goal);
+            goal.setElement(String.valueOf(index.toString().charAt(0)));
+            m.setEndNode(String.valueOf(index.toString().charAt(0)),goal);
         }
-        m.setNode('P',start);
+        m.setNode("P",start);
         System.out.println(m.toString());
     }
 

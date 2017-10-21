@@ -6,9 +6,9 @@ public class Square implements Comparable<Square>{
     private int h;
     private int fn;
     private Square parent;
-    private char element;
+    private String element;
 
-    Square(char c, int x, int y){
+    Square(String c, int x, int y){
         this.x = x;
         this.y = y;
         element = c;
@@ -66,11 +66,11 @@ public class Square implements Comparable<Square>{
         this.parent = parent;
     }
 
-    public char getElement() {
+    public String getElement() {
         return element;
     }
 
-    public void setElement(char element) {
+    public void setElement(String element) {
         this.element = element;
     }
 
