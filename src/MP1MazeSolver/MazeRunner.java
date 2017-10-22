@@ -139,4 +139,13 @@ public class MazeRunner {
         end.setElement(" ");
         m.resetPathCost();
     }
+
+    int getNodesExpanded(){
+        return closedList.getcList().size();
+    }
+
+    int getFrontier(){
+        return openList.getFrontier();
+    }
+
 }

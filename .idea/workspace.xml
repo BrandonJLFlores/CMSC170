@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e5fd62e-bde4-45df-ab5b-710a35104fec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MP1bflores/MP1MazeSolver/Maze.class" afterPath="$PROJECT_DIR$/out/production/MP1bflores/MP1MazeSolver/Maze.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MP1bflores/MP1MazeSolver/Goal.class" afterPath="$PROJECT_DIR$/out/production/MP1bflores/MP1MazeSolver/Goal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MP1bflores/MP1MazeSolver/MazeRunner.class" afterPath="$PROJECT_DIR$/out/production/MP1bflores/MP1MazeSolver/MazeRunner.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MP1bflores/MP1MazeSolver/MultipleGoalsRunner.class" afterPath="$PROJECT_DIR$/out/production/MP1bflores/MP1MazeSolver/MultipleGoalsRunner.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MP1MazeSolver/Maze.java" afterPath="$PROJECT_DIR$/src/MP1MazeSolver/Maze.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MP1MazeSolver/Goal.java" afterPath="$PROJECT_DIR$/src/MP1MazeSolver/Goal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MP1MazeSolver/MazeRunner.java" afterPath="$PROJECT_DIR$/src/MP1MazeSolver/MazeRunner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MP1MazeSolver/MultipleGoalsRunner.java" afterPath="$PROJECT_DIR$/src/MP1MazeSolver/MultipleGoalsRunner.java" />
     </list>
     <ignored path="$PROJECT_DIR$/src/exc/" />
@@ -22,8 +24,8 @@
       <file leaf-file-name="ClosedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/ClosedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding>
                 <element signature="e#152#153#0" expanded="true" />
                 <element signature="e#193#194#0" expanded="true" />
@@ -35,8 +37,8 @@
       <file leaf-file-name="Maze.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/Maze.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="116" column="73" lean-forward="true" selection-start-line="116" selection-start-column="73" selection-end-line="116" selection-end-column="73" />
+            <state relative-caret-position="901">
+              <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
               <folding>
                 <element signature="e#2081#2082#0" expanded="true" />
                 <element signature="e#2107#2108#0" expanded="true" />
@@ -134,18 +136,21 @@
       <file leaf-file-name="MazeRunner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/MazeRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="94" column="18" lean-forward="true" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
+            <state relative-caret-position="2159">
+              <caret line="127" column="19" lean-forward="true" selection-start-line="127" selection-start-column="19" selection-end-line="127" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3494#3495#0" expanded="true" />
                 <element signature="e#3538#3539#0" expanded="true" />
                 <element signature="e#4069#4070#0" expanded="true" />
                 <element signature="e#4107#4108#0" expanded="true" />
-                <element signature="e#4128#4129#0" expanded="true" />
                 <element signature="e#4152#4153#0" expanded="true" />
                 <element signature="e#4186#4187#0" expanded="true" />
                 <element signature="e#4213#4214#0" expanded="true" />
+                <element signature="e#4437#4438#0" expanded="true" />
+                <element signature="e#4488#4489#0" expanded="true" />
+                <element signature="e#4512#4513#0" expanded="true" />
+                <element signature="e#4557#4558#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,9 +159,11 @@
       <file leaf-file-name="MultipleGoalsRunner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/MultipleGoalsRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="90" column="35" lean-forward="false" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="238">
+              <caret line="14" column="58" lean-forward="false" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,17 +171,28 @@
       <file leaf-file-name="Goal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/Goal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="294">
+              <caret line="59" column="38" lean-forward="true" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
               <folding>
-                <element signature="e#289#290#0" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#552#553#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
                 <element signature="e#592#593#0" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
+                <element signature="e#624#625#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+                <element signature="e#1107#1108#0" expanded="true" />
+                <element signature="e#1138#1139#0" expanded="true" />
+                <element signature="e#1183#1184#0" expanded="true" />
+                <element signature="e#1223#1224#0" expanded="true" />
+                <element signature="e#1260#1261#0" expanded="true" />
+                <element signature="e#1296#1297#0" expanded="true" />
+                <element signature="e#1346#1347#0" expanded="true" />
+                <element signature="e#1391#1392#0" expanded="true" />
+                <element signature="e#1436#1437#0" expanded="true" />
+                <element signature="e#1476#1477#0" expanded="true" />
+                <element signature="e#1523#1524#0" expanded="true" />
+                <element signature="e#1565#1566#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -219,8 +237,8 @@
         <option value="$PROJECT_DIR$/src/MP1MazeSolver/OpenList.java" />
         <option value="$PROJECT_DIR$/src/MP1MazeSolver/ParentList.java" />
         <option value="$PROJECT_DIR$/src/MP1MazeSolver/Square.java" />
-        <option value="$PROJECT_DIR$/src/MP1MazeSolver/MazeRunner.java" />
         <option value="$PROJECT_DIR$/src/MP1MazeSolver/Goal.java" />
+        <option value="$PROJECT_DIR$/src/MP1MazeSolver/MazeRunner.java" />
         <option value="$PROJECT_DIR$/src/MP1MazeSolver/MultipleGoalsRunner.java" />
         <option value="$PROJECT_DIR$/src/MP1MazeSolver/Maze.java" />
       </list>
@@ -234,8 +252,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1087" />
+    <option name="width" value="1378" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -301,6 +319,13 @@
               <item name="CMSC170" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="MP1MazeSolver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMSC170" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMSC170" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="MP1MazeSolver" type="462c0819:PsiDirectoryNode" />
+              <item name="backup" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -478,7 +503,7 @@
       <workItem from="1508429374651" duration="9319000" />
       <workItem from="1508481276283" duration="4197000" />
       <workItem from="1508513451787" duration="333000" />
-      <workItem from="1508578453577" duration="7702000" />
+      <workItem from="1508578453577" duration="11239000" />
     </task>
     <task id="LOCAL-00001" summary="luliverse">
       <created>1508508801084</created>
@@ -491,7 +516,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26175000" />
+    <option name="totallyTimeSpent" value="29712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -505,7 +530,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="1" y="501" width="1362" height="226" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="1" y="616" width="1362" height="111" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -546,7 +571,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="1" y="501" width="1362" height="226" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="1" y="549" width="1362" height="178" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
@@ -645,10 +670,13 @@
             <element signature="e#3538#3539#0" expanded="true" />
             <element signature="e#4069#4070#0" expanded="true" />
             <element signature="e#4107#4108#0" expanded="true" />
-            <element signature="e#4128#4129#0" expanded="true" />
             <element signature="e#4152#4153#0" expanded="true" />
             <element signature="e#4186#4187#0" expanded="true" />
             <element signature="e#4213#4214#0" expanded="true" />
+            <element signature="e#4437#4438#0" expanded="true" />
+            <element signature="e#4488#4489#0" expanded="true" />
+            <element signature="e#4512#4513#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -663,10 +691,13 @@
             <element signature="e#3538#3539#0" expanded="true" />
             <element signature="e#4069#4070#0" expanded="true" />
             <element signature="e#4107#4108#0" expanded="true" />
-            <element signature="e#4128#4129#0" expanded="true" />
             <element signature="e#4152#4153#0" expanded="true" />
             <element signature="e#4186#4187#0" expanded="true" />
             <element signature="e#4213#4214#0" expanded="true" />
+            <element signature="e#4437#4438#0" expanded="true" />
+            <element signature="e#4488#4489#0" expanded="true" />
+            <element signature="e#4512#4513#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -935,10 +966,13 @@
             <element signature="e#3538#3539#0" expanded="true" />
             <element signature="e#4069#4070#0" expanded="true" />
             <element signature="e#4107#4108#0" expanded="true" />
-            <element signature="e#4128#4129#0" expanded="true" />
             <element signature="e#4152#4153#0" expanded="true" />
             <element signature="e#4186#4187#0" expanded="true" />
             <element signature="e#4213#4214#0" expanded="true" />
+            <element signature="e#4437#4438#0" expanded="true" />
+            <element signature="e#4488#4489#0" expanded="true" />
+            <element signature="e#4512#4513#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1045,10 +1079,13 @@
             <element signature="e#3538#3539#0" expanded="true" />
             <element signature="e#4069#4070#0" expanded="true" />
             <element signature="e#4107#4108#0" expanded="true" />
-            <element signature="e#4128#4129#0" expanded="true" />
             <element signature="e#4152#4153#0" expanded="true" />
             <element signature="e#4186#4187#0" expanded="true" />
             <element signature="e#4213#4214#0" expanded="true" />
+            <element signature="e#4437#4438#0" expanded="true" />
+            <element signature="e#4488#4489#0" expanded="true" />
+            <element signature="e#4512#4513#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1132,40 +1169,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/ClosedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#193#194#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exc maze/trickysearch.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/MazeRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="94" column="18" lean-forward="true" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3494#3495#0" expanded="true" />
-            <element signature="e#3538#3539#0" expanded="true" />
-            <element signature="e#4069#4070#0" expanded="true" />
-            <element signature="e#4107#4108#0" expanded="true" />
-            <element signature="e#4128#4129#0" expanded="true" />
-            <element signature="e#4152#4153#0" expanded="true" />
-            <element signature="e#4186#4187#0" expanded="true" />
-            <element signature="e#4213#4214#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1177,35 +1185,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/MultipleGoalsRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/ClosedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="90" column="35" lean-forward="false" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/Goal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="294">
+          <caret line="59" column="38" lean-forward="true" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
           <folding>
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
             <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#1107#1108#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1223#1224#0" expanded="true" />
+            <element signature="e#1260#1261#0" expanded="true" />
+            <element signature="e#1296#1297#0" expanded="true" />
+            <element signature="e#1346#1347#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
+            <element signature="e#1476#1477#0" expanded="true" />
+            <element signature="e#1523#1524#0" expanded="true" />
+            <element signature="e#1565#1566#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/MazeRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2159">
+          <caret line="127" column="19" lean-forward="true" selection-start-line="127" selection-start-column="19" selection-end-line="127" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3494#3495#0" expanded="true" />
+            <element signature="e#3538#3539#0" expanded="true" />
+            <element signature="e#4069#4070#0" expanded="true" />
+            <element signature="e#4107#4108#0" expanded="true" />
+            <element signature="e#4152#4153#0" expanded="true" />
+            <element signature="e#4186#4187#0" expanded="true" />
+            <element signature="e#4213#4214#0" expanded="true" />
+            <element signature="e#4437#4438#0" expanded="true" />
+            <element signature="e#4488#4489#0" expanded="true" />
+            <element signature="e#4512#4513#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/MultipleGoalsRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="58" lean-forward="false" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/Maze.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="116" column="73" lean-forward="true" selection-start-line="116" selection-start-column="73" selection-end-line="116" selection-end-column="73" />
+        <state relative-caret-position="901">
+          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
           <folding>
             <element signature="e#2081#2082#0" expanded="true" />
             <element signature="e#2107#2108#0" expanded="true" />
