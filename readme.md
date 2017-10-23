@@ -1,5 +1,5 @@
 ***
-# How to use
+# HOW TO USE
 ***
 ### For Problem 1:
 
