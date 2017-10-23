@@ -17,6 +17,6 @@
 ### For Problem 2:
 1) Change filename in main (MultipleGoalsRunner.java) for the desired maze to solve
 
-1) Follow instructions 2 and 3 in problem 1.
+1) Follow instructions 2 and 3 for problem 1.
 
 2) **Run** MultipleGoalsRunner.java
