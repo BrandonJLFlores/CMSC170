@@ -11,16 +11,8 @@ public class MazeRunner {
     private static ArrayList<Square> path;
 
     public static void main(String[] args) {
-
-        System.out.println("TINY MAZE: ");
-        MazeRunner tiny_Maze = new MazeRunner("exc maze/tinyMaze.lay.txt");
-        tiny_Maze.solve();
-        tiny_Maze.print();
-        System.out.println();
-
-
-        System.out.println("SMALL MAZE: ");
-        MazeRunner small_Maze = new MazeRunner("exc maze/smallMaze.lay.txt");
+        /*System.out.println("SMALL MAZE: ");
+        MazeRunner small_Maze = new MazeRunner("exc maze/tinyMaze.lay.txt");
         small_Maze.solve();
         small_Maze.print();
         System.out.println();
@@ -36,7 +28,7 @@ public class MazeRunner {
         big_Maze.solve();
         big_Maze.print();
         System.out.println();
-
+*/
         System.out.println("OPEN MAZE: ");
         MazeRunner open_Maze = new MazeRunner("exc maze/openMaze.lay.txt");
         open_Maze.solve();
@@ -75,7 +67,7 @@ public class MazeRunner {
                 if(!closedList.contains(square) && square != null && !square.getElement().equals("%")){
                     if(!openList.contains(square) || square.getG() > currentLocation.getG() + 1){
                         square.setParent(currentLocation);
-                        square.setH(getHeuristic(1,square)); //1 if manhattan, else straight line
+                        square.setH(getHeuristic(2,square)); //1 if manhattan, else straight line
                         square.setG(currentLocation.getG() + 1);
                         square.setFn(square.getG() + square.getH());
                     }
@@ -106,7 +98,7 @@ public class MazeRunner {
 
 
     void print(){
-        System.out.print(m.toString());
+        System.out.println(m.toString());
         System.out.println("Number of Nodes Expanded: " + closedList.getcList().size());
         System.out.println("Maximum Size of Frontier: " + openList.getFrontier());
         System.out.println("Path: " + m.getPathCost());

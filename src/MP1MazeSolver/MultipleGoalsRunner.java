@@ -10,14 +10,15 @@ public class MultipleGoalsRunner {
     private Square start;//store for printing purposes
     private ArrayList<Goal> end;
     private ArrayList<Goal> path;
-    private String[] filenames = new String[]{"trickySearch","tinyMaze","smallSearch" +
+    private static String[] filenames = new String[]{"trickySearch","tinyMaze","smallSearch" +
             "smallMaze", "openMaze", "mediumSearch", "bigSearch", "bigMaze"};
     public static void main(String[] args) {
-        final String FILENAME = "exc maze/smallSearch.lay.txt";
+        System.out.println("TRICKY SEARCH:");
+        final String FILENAME = "exc maze/trickySearch.lay.txt";
         MultipleGoalsRunner mazeRunner = new MultipleGoalsRunner(FILENAME);
-        int heuristic = 1;// 1 for Manhattan and 2 for Straight-line
+        int heuristic = 2;// 1 for Manhattan and 2 for Straight-line
         mazeRunner.solve(heuristic);
-        mazeRunner.solve(heuristic+1);
+        //mazeRunner.solve(heuristic+1);
     }
 
     private MultipleGoalsRunner(String name){
@@ -62,7 +63,7 @@ public class MultipleGoalsRunner {
             goal.setPath(mRunner.getPath(),goal);
             mRunner.reset();//erases for printing purposes
         }
-        //System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        //System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
 
     private void setMazePrint(){
@@ -72,7 +73,7 @@ public class MultipleGoalsRunner {
             m.setEndNode(index.toString(),goal);
         }
         m.setNode("P",start);
-        System.out.println(m.toString());
+        System.out.println(m.toString(path));
         printFrontier();
         printNodesExpanded();
         printPathCost();
@@ -117,12 +118,12 @@ public class MultipleGoalsRunner {
         for(int i = 1 ; i < end.size() ; i++){
             heu = end.get(i).getHeuristic();
             pc = end.get(i).getPathCost();
-            if((heu+pc < minpc + minheu)){
+            if((heu + pc < minpc + minheu)){
                 current = i;
                 minheu = heu;
                 minpc = pc;
             }else if(minpc + minheu == heu + pc){
-                if(minpc < pc){
+                if(pc < minpc){
                     current = i;
                     minheu = heu;
                     minpc = pc;

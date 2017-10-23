@@ -108,34 +108,39 @@ class Maze {
     }
 
     //no E and F version
-//    @Override
-//    public String toString() {
-//        StringBuilder stringBuilder = new StringBuilder();
-//        for(int i = 0; i < rows; i++){
-//            for (int j = 0; j < cols; j++){
-//                stringBuilder.append(maze[i][j].getElement());
-//                if (maze[i][j].getElement().matches("-?\\d+(\\.\\d+)?")){
-//                    if (Integer.valueOf(maze[i][j].getElement()) < 10){
-//                        stringBuilder.append("   ");
-//                    }
-//                    else if (Integer.valueOf(maze[i][j].getElement()) >= 10 && Integer.valueOf(maze[i][j].getElement()) < 100){
-//                        stringBuilder.append("  ");
-//                    }
-//                    else{
-//                        stringBuilder.append(" ");
-//                    }
-//                }
-//                else {
-//                    stringBuilder.append("   ");
-//                }
-//            }
-//            stringBuilder.append('\n');
-//        }
-//        return  stringBuilder.toString();
-//    }
-
-    //with E and F
+    public String toString(ArrayList<Goal> goalList) {
+        for(Goal goal: goalList){
+            for(Square square : goal.getPath()){
+                if(maze[square.getX()][square.getY()].getElement().compareTo(" ") == 0)
+                maze[square.getX()][square.getY()].setElement("~");
+            }
+        }
+        return  toString();
+    }
+    //WITHOUT G AND F
     @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        for(int i = 0; i < rows; i++){
+            for (int j = 0; j < cols; j++){
+                stringBuilder.append(maze[i][j].getElement());
+                if (maze[i][j].getElement().matches("-?\\d+(\\.\\d+)?")){
+                    if (Integer.valueOf(maze [i][j].getElement()) < 10){ stringBuilder.append("   "); }
+                    else if (Integer.valueOf(maze[i][j].getElement()) >= 10 && Integer.valueOf(maze[i][j].getElement()) < 100){
+                        stringBuilder.append("  ");
+                    }
+                    else{ stringBuilder.append(" "); }
+                }
+                else { stringBuilder.append("   "); }
+            }
+            stringBuilder.append('\n');
+        }
+        return  stringBuilder.toString();
+    }
+
+
+    //WITH G AND F
+    /*@Override
     public String toString() {
         //endNode.setElement("G");
         StringBuilder stringBuilder = new StringBuilder();
@@ -168,9 +173,7 @@ class Maze {
             stringBuilder.append('\n');
         }
         return  stringBuilder.toString();
-    }
-
-
+    }*/
     //Multiple Goals Functions
 
     public ArrayList<Goal> getEndGoals() { //stores end goals
