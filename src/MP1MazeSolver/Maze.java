@@ -116,17 +116,26 @@ class Maze {
                 stringBuilder.append(maze[i][j].getElement());
                 if (maze[i][j].getElement().matches("-?\\d+(\\.\\d+)?")){
                     if (Integer.valueOf(maze[i][j].getElement()) < 10){
+                        stringBuilder.append("   ");
+                    }
+                    else if (Integer.valueOf(maze[i][j].getElement()) >= 10 && Integer.valueOf(maze[i][j].getElement()) < 100){
+                        stringBuilder.append("  ");
+                    }
+                    else{
                         stringBuilder.append(" ");
                     }
                 }
                 else {
-                    stringBuilder.append(" ");
+                    stringBuilder.append("   ");
                 }
             }
             stringBuilder.append('\n');
         }
         return  stringBuilder.toString();
     }
+
+
+
 
     //Multiple Goals Functions
 
@@ -151,6 +160,7 @@ class Maze {
             eraseGoals(goal);
         }
     }
+
     public void eraseGoals(Goal goal){
         maze[goal.getX()][goal.getY()].setElement(String.valueOf(new String("  ").charAt(0)));
     }

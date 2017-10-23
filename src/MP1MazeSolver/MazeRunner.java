@@ -11,26 +11,34 @@ public class MazeRunner {
     private static ArrayList<Square> path;
 
     public static void main(String[] args) {
+
+        System.out.println("TINY MAZE: ");
+        MazeRunner tiny_Maze = new MazeRunner("exc maze/tinyMaze.lay.txt");
+        tiny_Maze.solve();
+        tiny_Maze.print();
+        System.out.println();
+
+
         System.out.println("SMALL MAZE: ");
-        MazeRunner small_Maze = new MazeRunner("exc maze/smallMaze.txt");
+        MazeRunner small_Maze = new MazeRunner("exc maze/smallMaze.lay.txt");
         small_Maze.solve();
         small_Maze.print();
         System.out.println();
 
         System.out.println("MEDIUM MAZE: ");
-        MazeRunner medium_Maze = new MazeRunner("exc maze/mediumMaze.txt");
+        MazeRunner medium_Maze = new MazeRunner("exc maze/mediumMaze.lay.txt");
         medium_Maze.solve();
         medium_Maze.print();
         System.out.println();
 
         System.out.println("BIG MAZE: ");
-        MazeRunner big_Maze = new MazeRunner("exc maze/bigMaze.txt");
+        MazeRunner big_Maze = new MazeRunner("exc maze/bigMaze.lay.txt");
         big_Maze.solve();
         big_Maze.print();
         System.out.println();
 
         System.out.println("OPEN MAZE: ");
-        MazeRunner open_Maze = new MazeRunner("exc maze/openMaze.txt");
+        MazeRunner open_Maze = new MazeRunner("exc maze/openMaze.lay.txt");
         open_Maze.solve();
         open_Maze.print();
         System.out.println();
@@ -90,7 +98,7 @@ public class MazeRunner {
 
 
     void print(){
-        System.out.println(m.toString());
+        System.out.print(m.toString());
         System.out.println("Number of Nodes Expanded: " + closedList.getcList().size());
         System.out.println("Maximum Size of Frontier: " + openList.getFrontier());
         System.out.println("Path: " + m.getPathCost());

@@ -10,11 +10,14 @@ public class MultipleGoalsRunner {
     private Square start;//store for printing purposes
     private ArrayList<Goal> end;
     private ArrayList<Goal> path;
-
+    private String[] filenames = new String[]{"trickySearch","tinyMaze","smallSearch" +
+            "smallMaze", "openMaze", "mediumSearch", "bigSearch", "bigMaze"};
     public static void main(String[] args) {
-        final String FILENAME = "exc maze/small_search.txt";//
+        final String FILENAME = "exc maze/smallSearch.lay.txt";
         MultipleGoalsRunner mazeRunner = new MultipleGoalsRunner(FILENAME);
-        mazeRunner.solve();
+        int heuristic = 1;// 1 for Manhattan and 2 for Straight-line
+        mazeRunner.solve(heuristic);
+        mazeRunner.solve(heuristic+1);
     }
 
     private MultipleGoalsRunner(String name){
@@ -24,7 +27,7 @@ public class MultipleGoalsRunner {
         path = new ArrayList<Goal>();
     }
 
-    private void solve(){
+    private void solve(int h){
         /*Solution: A*
             1. Calculate Path cost and Heuristic all possible goals
                 A. Use previous mazeRunner to solve for every goal
@@ -37,7 +40,7 @@ public class MultipleGoalsRunner {
 
         m.eraseGoals(end);//erases Goals
         while(end.size() > 0){
-            getGoalsInfo(); //get Heuristic and Path Cost for each goal.
+            getGoalsInfo(h); //get Heuristic and Path Cost for each goal.
             int maxIndex = findMin();
             Goal tempGoal = end.get(maxIndex);
             path.add(tempGoal);
@@ -46,20 +49,20 @@ public class MultipleGoalsRunner {
         }
         setMazePrint();
     }
-    private void getGoalsInfo(){//gets Heuristic, Path Cost for each
+    private void getGoalsInfo(int h){//gets Heuristic, Path Cost for each
         for(Goal goal: end){
             m.setEndNode(goal);
             MazeRunner mRunner = new MazeRunner(m);
             mRunner.solve();
-            mRunner.print();
+            //mRunner.print();//prints process
             goal.setPathCost(mRunner.getPathCost());
-            goal.setHeuristic(mRunner.getHeuristic(1));
+            goal.setHeuristic(mRunner.getHeuristic(h));
             goal.setNodesExpanded(mRunner.getNodesExpanded());
             goal.setFrontier(mRunner.getFrontier());
             goal.setPath(mRunner.getPath(),goal);
             mRunner.reset();//erases for printing purposes
         }
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        //System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
 
     private void setMazePrint(){
@@ -109,13 +112,21 @@ public class MultipleGoalsRunner {
     }
 
     private int findMin(){//linear search finding max goal
-        int current = 0, min = end.get(0).getHeuristic() + end.get(0).getPathCost()
-                , total = 0;
+        int current = 0, minheu = end.get(0).getHeuristic(),minpc = end.get(0).getPathCost()
+                , heu = 0, pc = 0;
         for(int i = 1 ; i < end.size() ; i++){
-            total = end.get(i).getHeuristic() + end.get(i).getPathCost();
-            if(total < min){
+            heu = end.get(i).getHeuristic();
+            pc = end.get(i).getPathCost();
+            if((heu+pc < minpc + minheu)){
                 current = i;
-                min = total;
+                minheu = heu;
+                minpc = pc;
+            }else if(minpc + minheu == heu + pc){
+                if(minpc < pc){
+                    current = i;
+                    minheu = heu;
+                    minpc = pc;
+                }
             }
         }
         return current;
