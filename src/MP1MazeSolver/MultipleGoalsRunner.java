@@ -14,6 +14,7 @@ public class MultipleGoalsRunner {
             "smallMaze", "openMaze", "mediumSearch", "bigSearch", "bigMaze"};
     public static void main(String[] args) {
         System.out.println("TRICKY SEARCH:");
+        //change filename here
         final String FILENAME = "exc maze/trickySearch.lay.txt";
         MultipleGoalsRunner mazeRunner = new MultipleGoalsRunner(FILENAME);
         int heuristic = 2;// 1 for Manhattan and 2 for Straight-line

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e5fd62e-bde4-45df-ab5b-710a35104fec" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MP1MazeSolver/Maze.java" afterPath="$PROJECT_DIR$/src/MP1MazeSolver/Maze.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MP1MazeSolver/MazeRunner.java" afterPath="$PROJECT_DIR$/src/MP1MazeSolver/MazeRunner.java" />
@@ -18,18 +19,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Maze.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Maze.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/Maze.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="119" column="21" lean-forward="false" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
+            <state relative-caret-position="1144">
+              <caret line="177" column="13" lean-forward="false" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="13" />
               <folding>
-                <marker date="1508751091958" expanded="false" signature="5636:5642" ph="&lt;~&gt;" />
-                <marker date="1508751091958" expanded="false" signature="6641:6651" ph=" { " />
-                <marker date="1508751091958" expanded="false" signature="6672:6678" ph=" }" />
-                <marker date="1508751091958" expanded="false" signature="7003:7013" ph=" { " />
-                <marker date="1508751091958" expanded="false" signature="7026:7032" ph=" }" />
+                <element signature="e#5812#5818#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="340">
+                <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -37,7 +47,7 @@
       <file leaf-file-name="Goal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/Goal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="765">
               <caret line="62" column="21" lean-forward="false" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
               <folding>
                 <element signature="e#1346#1347#0" expanded="true" />
@@ -47,38 +57,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileInputStream.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/io/FileInputStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2890">
-              <caret line="194" column="0" lean-forward="false" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MazeRunner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/MazeRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="26" />
+            <state relative-caret-position="612">
+              <caret line="71" column="127" lean-forward="false" selection-start-line="71" selection-start-column="127" selection-end-line="71" selection-end-column="127" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1459#1460#0" expanded="true" />
-                <element signature="e#1492#1493#0" expanded="true" />
-                <element signature="e#1536#1537#0" expanded="true" />
-                <element signature="e#1567#1568#0" expanded="true" />
-                <element signature="e#3669#3670#0" expanded="true" />
-                <element signature="e#3713#3714#0" expanded="true" />
-                <marker date="1508751091853" expanded="false" signature="4244:4254" ph=" { " />
-                <marker date="1508751091853" expanded="false" signature="4277:4283" ph=" }" />
-                <marker date="1508751091853" expanded="false" signature="4303:4313" ph=" { " />
-                <marker date="1508751091853" expanded="false" signature="4322:4328" ph=" }" />
-                <marker date="1508751091853" expanded="false" signature="4361:4371" ph=" { " />
-                <marker date="1508751091853" expanded="false" signature="4383:4389" ph=" }" />
-                <marker date="1508751091853" expanded="false" signature="4612:4622" ph=" { " />
-                <marker date="1508751091853" expanded="false" signature="4658:4664" ph=" }" />
-                <marker date="1508751091853" expanded="false" signature="4687:4697" ph=" { " />
+                <element signature="e#1568#1569#0" expanded="true" />
+                <element signature="e#1599#1600#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,8 +74,8 @@
       <file leaf-file-name="MultipleGoalsRunner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/MultipleGoalsRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="42" column="10" lean-forward="true" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+            <state relative-caret-position="272">
+              <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,9 +113,10 @@
         <option value="$PROJECT_DIR$/src/MP1MazeSolver/ParentList.java" />
         <option value="$PROJECT_DIR$/src/MP1MazeSolver/Square.java" />
         <option value="$PROJECT_DIR$/src/MP1MazeSolver/Goal.java" />
+        <option value="$PROJECT_DIR$/src/MP1MazeSolver/Maze.java" />
         <option value="$PROJECT_DIR$/src/MP1MazeSolver/MultipleGoalsRunner.java" />
         <option value="$PROJECT_DIR$/src/MP1MazeSolver/MazeRunner.java" />
-        <option value="$PROJECT_DIR$/src/MP1MazeSolver/Maze.java" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -159,61 +147,32 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="CMSC170" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMSC170" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CMSC170" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMSC170" type="462c0819:PsiDirectoryNode" />
-              <item name="exc maze" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CMSC170" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMSC170" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CMSC170" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMSC170" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CMSC170" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMSC170" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="MP1bflores" type="b2602c69:ProjectViewProjectNode" />
               <item name="MP1bflores" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CMSC170" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMSC170" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CMSC170" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMSC170" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MP1MazeSolver" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../qrcode-spike" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\School\CMSC\CMSC170\MP1bflores" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -379,6 +338,7 @@
       <workItem from="1508578453577" duration="11239000" />
       <workItem from="1508731601270" duration="629000" />
       <workItem from="1508733151695" duration="7655000" />
+      <workItem from="1508755398187" duration="968000" />
     </task>
     <task id="LOCAL-00001" summary="luliverse">
       <created>1508508801084</created>
@@ -391,26 +351,25 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38802000" />
+    <option name="totallyTimeSpent" value="39770000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="1" y="31" width="1362" height="696" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="1" y="31" width="1362" height="696" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -422,6 +381,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -470,68 +430,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-          <folding>
-            <element signature="e#406#407#0" expanded="false" />
-            <element signature="e#430#431#0" expanded="false" />
-            <element signature="e#461#462#0" expanded="false" />
-            <element signature="e#487#488#0" expanded="false" />
-            <element signature="e#512#513#0" expanded="false" />
-            <element signature="e#536#537#0" expanded="false" />
-            <element signature="e#567#568#0" expanded="false" />
-            <element signature="e#593#594#0" expanded="false" />
-            <element signature="e#618#619#0" expanded="false" />
-            <element signature="e#642#643#0" expanded="false" />
-            <element signature="e#673#674#0" expanded="false" />
-            <element signature="e#699#700#0" expanded="false" />
-            <element signature="e#724#725#0" expanded="false" />
-            <element signature="e#748#749#0" expanded="false" />
-            <element signature="e#779#780#0" expanded="false" />
-            <element signature="e#805#806#0" expanded="false" />
-            <element signature="e#831#832#0" expanded="false" />
-            <element signature="e#856#857#0" expanded="false" />
-            <element signature="e#889#890#0" expanded="false" />
-            <element signature="e#917#918#0" expanded="false" />
-            <element signature="e#950#951#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1023#1024#0" expanded="false" />
-            <element signature="e#1059#1060#0" expanded="false" />
-            <element signature="e#1093#1094#0" expanded="false" />
-            <element signature="e#1123#1124#0" expanded="false" />
-            <element signature="e#1169#1170#0" expanded="false" />
-            <element signature="e#1207#1208#0" expanded="false" />
-            <element signature="e#1233#1234#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-            <element signature="e#1322#1323#0" expanded="false" />
-            <element signature="e#1370#1371#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/MazeRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1459#1460#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1567#1568#0" expanded="true" />
-            <element signature="e#3669#3670#0" expanded="true" />
-            <element signature="e#3713#3714#0" expanded="true" />
-            <marker date="1508751091853" expanded="false" signature="4244:4254" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4277:4283" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4303:4313" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4322:4328" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4361:4371" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4383:4389" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4612:4622" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4658:4664" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4687:4697" ph=" { " />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -542,21 +448,8 @@
           <caret line="85" column="41" lean-forward="true" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1459#1460#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1567#1568#0" expanded="true" />
-            <element signature="e#3669#3670#0" expanded="true" />
-            <element signature="e#3713#3714#0" expanded="true" />
-            <marker date="1508751091853" expanded="false" signature="4244:4254" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4277:4283" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4303:4313" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4322:4328" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4361:4371" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4383:4389" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4612:4622" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4658:4664" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4687:4697" ph=" { " />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -615,11 +508,7 @@
         <state relative-caret-position="1445">
           <caret line="95" column="45" lean-forward="false" selection-start-line="95" selection-start-column="45" selection-end-line="95" selection-end-column="45" />
           <folding>
-            <marker date="1508751091958" expanded="false" signature="5636:5642" ph="&lt;~&gt;" />
-            <marker date="1508751091958" expanded="false" signature="6641:6651" ph=" { " />
-            <marker date="1508751091958" expanded="false" signature="6672:6678" ph=" }" />
-            <marker date="1508751091958" expanded="false" signature="7003:7013" ph=" { " />
-            <marker date="1508751091958" expanded="false" signature="7026:7032" ph=" }" />
+            <element signature="e#5812#5818#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -742,11 +631,7 @@
         <state relative-caret-position="126">
           <caret line="105" column="30" lean-forward="false" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
           <folding>
-            <marker date="1508751091958" expanded="false" signature="5636:5642" ph="&lt;~&gt;" />
-            <marker date="1508751091958" expanded="false" signature="6641:6651" ph=" { " />
-            <marker date="1508751091958" expanded="false" signature="6672:6678" ph=" }" />
-            <marker date="1508751091958" expanded="false" signature="7003:7013" ph=" { " />
-            <marker date="1508751091958" expanded="false" signature="7026:7032" ph=" }" />
+            <element signature="e#5812#5818#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -757,21 +642,8 @@
           <caret line="71" column="53" lean-forward="false" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1459#1460#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1567#1568#0" expanded="true" />
-            <element signature="e#3669#3670#0" expanded="true" />
-            <element signature="e#3713#3714#0" expanded="true" />
-            <marker date="1508751091853" expanded="false" signature="4244:4254" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4277:4283" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4303:4313" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4322:4328" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4361:4371" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4383:4389" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4612:4622" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4658:4664" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4687:4697" ph=" { " />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -792,11 +664,7 @@
         <state relative-caret-position="1292">
           <caret line="86" column="57" lean-forward="false" selection-start-line="86" selection-start-column="57" selection-end-line="86" selection-end-column="57" />
           <folding>
-            <marker date="1508751091958" expanded="false" signature="5636:5642" ph="&lt;~&gt;" />
-            <marker date="1508751091958" expanded="false" signature="6641:6651" ph=" { " />
-            <marker date="1508751091958" expanded="false" signature="6672:6678" ph=" }" />
-            <marker date="1508751091958" expanded="false" signature="7003:7013" ph=" { " />
-            <marker date="1508751091958" expanded="false" signature="7026:7032" ph=" }" />
+            <element signature="e#5812#5818#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -863,21 +731,8 @@
           <caret line="44" column="50" lean-forward="false" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1459#1460#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1567#1568#0" expanded="true" />
-            <element signature="e#3669#3670#0" expanded="true" />
-            <element signature="e#3713#3714#0" expanded="true" />
-            <marker date="1508751091853" expanded="false" signature="4244:4254" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4277:4283" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4303:4313" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4322:4328" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4361:4371" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4383:4389" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4612:4622" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4658:4664" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4687:4697" ph=" { " />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -979,17 +834,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/io/FileInputStream.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/io/FileInputStream.java" />
+    <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/Maze.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2890">
-          <caret line="194" column="0" lean-forward="false" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1144">
+          <caret line="177" column="13" lean-forward="false" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="13" />
+          <folding>
+            <element signature="e#5812#5818#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/Goal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="765">
           <caret line="62" column="21" lean-forward="false" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
           <folding>
             <element signature="e#1346#1347#0" expanded="true" />
@@ -1000,8 +858,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/MultipleGoalsRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="42" column="10" lean-forward="true" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+        <state relative-caret-position="272">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1010,40 +868,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/MazeRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="26" />
+        <state relative-caret-position="612">
+          <caret line="71" column="127" lean-forward="false" selection-start-line="71" selection-start-column="127" selection-end-line="71" selection-end-column="127" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1459#1460#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1567#1568#0" expanded="true" />
-            <element signature="e#3669#3670#0" expanded="true" />
-            <element signature="e#3713#3714#0" expanded="true" />
-            <marker date="1508751091853" expanded="false" signature="4244:4254" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4277:4283" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4303:4313" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4322:4328" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4361:4371" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4383:4389" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4612:4622" ph=" { " />
-            <marker date="1508751091853" expanded="false" signature="4658:4664" ph=" }" />
-            <marker date="1508751091853" expanded="false" signature="4687:4697" ph=" { " />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MP1MazeSolver/Maze.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="119" column="21" lean-forward="false" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
-          <folding>
-            <marker date="1508751091958" expanded="false" signature="5636:5642" ph="&lt;~&gt;" />
-            <marker date="1508751091958" expanded="false" signature="6641:6651" ph=" { " />
-            <marker date="1508751091958" expanded="false" signature="6672:6678" ph=" }" />
-            <marker date="1508751091958" expanded="false" signature="7003:7013" ph=" { " />
-            <marker date="1508751091958" expanded="false" signature="7026:7032" ph=" }" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="340">
+            <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

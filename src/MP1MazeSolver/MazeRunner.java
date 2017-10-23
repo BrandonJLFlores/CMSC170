@@ -30,6 +30,7 @@ public class MazeRunner {
         System.out.println();
 */
         System.out.println("OPEN MAZE: ");
+        //change file name here
         MazeRunner open_Maze = new MazeRunner("exc maze/openMaze.lay.txt");
         open_Maze.solve();
         open_Maze.print();
@@ -67,7 +68,8 @@ public class MazeRunner {
                 if(!closedList.contains(square) && square != null && !square.getElement().equals("%")){
                     if(!openList.contains(square) || square.getG() > currentLocation.getG() + 1){
                         square.setParent(currentLocation);
-                        square.setH(getHeuristic(2,square)); //1 if manhattan, else straight line
+                        square.setH(getHeuristic(1,square)); //change value to 1 to be able to use Manhattan Heuristic.
+                                                                // Use other numbers except one to use Straight Line Heuristic.
                         square.setG(currentLocation.getG() + 1);
                         square.setFn(square.getG() + square.getH());
                     }

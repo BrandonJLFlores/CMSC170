@@ -117,7 +117,14 @@ class Maze {
         }
         return  toString();
     }
-    //WITHOUT G AND F
+
+
+    /**
+     * toString() methods
+     * comment out one method and leave the one you want to use
+     */
+
+    //WITHOUT Expanded Nodes (E) AND Frontier Nodes (F)
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
@@ -139,7 +146,7 @@ class Maze {
     }
 
 
-    //WITH G AND F
+    //WITH Expanded Nodes (E) AND Frontier Nodes (F)
     /*@Override
     public String toString() {
         //endNode.setElement("G");
@@ -169,7 +176,6 @@ class Maze {
                     stringBuilder.append("   ");
                 }
             }
-
             stringBuilder.append('\n');
         }
         return  stringBuilder.toString();
