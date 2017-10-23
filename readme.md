@@ -1,7 +1,7 @@
 ***
-#How to use
+# How to use
 ***
-###For Problem 1:
+### For Problem 1:
 
 1) Change filename in main (MazeRunner.java) for the desired maze to solve
 
