@@ -1,6 +1,6 @@
-#HOW TO USE
+***
 #How to use
-
+***
 ###For Problem 1:
 
 1) Change filename in main (MazeRunner.java) for the desired maze to solve
@@ -13,7 +13,7 @@
 	Comments are also available above toString() methods inside Maze.java
 	
 4) **Run** Mazerunner.java
-
+***
 ### For Problem 2:
 1) Change filename in main (MultipleGoalsRunner.java) for the desired maze to solve
 
