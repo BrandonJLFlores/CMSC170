@@ -108,11 +108,46 @@ class Maze {
     }
 
     //no E and F version
+//    @Override
+//    public String toString() {
+//        StringBuilder stringBuilder = new StringBuilder();
+//        for(int i = 0; i < rows; i++){
+//            for (int j = 0; j < cols; j++){
+//                stringBuilder.append(maze[i][j].getElement());
+//                if (maze[i][j].getElement().matches("-?\\d+(\\.\\d+)?")){
+//                    if (Integer.valueOf(maze[i][j].getElement()) < 10){
+//                        stringBuilder.append("   ");
+//                    }
+//                    else if (Integer.valueOf(maze[i][j].getElement()) >= 10 && Integer.valueOf(maze[i][j].getElement()) < 100){
+//                        stringBuilder.append("  ");
+//                    }
+//                    else{
+//                        stringBuilder.append(" ");
+//                    }
+//                }
+//                else {
+//                    stringBuilder.append("   ");
+//                }
+//            }
+//            stringBuilder.append('\n');
+//        }
+//        return  stringBuilder.toString();
+//    }
+
+    //with E and F
     @Override
     public String toString() {
+        //endNode.setElement("G");
         StringBuilder stringBuilder = new StringBuilder();
         for(int i = 0; i < rows; i++){
             for (int j = 0; j < cols; j++){
+                if(MazeRunner.getClosedList().contains(maze[i][j]) && !maze[i][j].getElement().equals(".")
+                        && !maze[i][j].getElement().equals("P")){
+                    maze[i][j].setElement("E");
+                }
+                if(MazeRunner.getOpenList().contains(maze[i][j]) && !maze[i][j].getElement().equals("G")){
+                    maze[i][j].setElement("F");
+                }
                 stringBuilder.append(maze[i][j].getElement());
                 if (maze[i][j].getElement().matches("-?\\d+(\\.\\d+)?")){
                     if (Integer.valueOf(maze[i][j].getElement()) < 10){
@@ -129,12 +164,11 @@ class Maze {
                     stringBuilder.append("   ");
                 }
             }
+
             stringBuilder.append('\n');
         }
         return  stringBuilder.toString();
     }
-
-
 
 
     //Multiple Goals Functions

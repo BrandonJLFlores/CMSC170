@@ -53,6 +53,14 @@ public class MazeRunner {
         path = new ArrayList<Square>();
     }
 
+    public static ClosedList getClosedList() {
+        return closedList;
+    }
+
+    public static OpenList getOpenList() {
+        return openList;
+    }
+
     void solve(){
         Square currentLocation = null;
         openList.add(start);
